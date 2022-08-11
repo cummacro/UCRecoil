@@ -38,5 +38,8 @@
     <ClInclude Include="items.h">
       <Filter>header</Filter>
     </ClInclude>
+    <ClInclude Include="recoil.h">
+      <Filter>header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

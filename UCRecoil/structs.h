@@ -13,10 +13,12 @@ struct vec2 {
 };
 
 struct gun {
+	std::string name;
 	std::vector<vec2> pattern;
 	float rate;
 };
 
 struct scope {
+	std::string name;
 	float multiplier;
 };

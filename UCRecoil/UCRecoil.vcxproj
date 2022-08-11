@@ -134,6 +134,7 @@
     <ClInclude Include="globals.h" />
     <ClInclude Include="items.h" />
     <ClInclude Include="keys.h" />
+    <ClInclude Include="recoil.h" />
     <ClInclude Include="util.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="structs.h" />

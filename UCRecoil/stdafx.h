@@ -11,3 +11,6 @@
 #include "util.h"
 #include "items.h"
 #include "keys.h"
+#include "recoil.h"
+
+#define print(x) std::cout << x << std::endl

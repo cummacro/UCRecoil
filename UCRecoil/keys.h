@@ -15,16 +15,22 @@ namespace keys {
 	};
 
 	inline void handle() {
-		for (auto keys : gun_keys) {
-			if (GetAsyncKeyState(keys.second)) {
-				items::current_gun = items::guns[keys.first];
-			}
-		}
+		while (1) {
 
-		for (auto keys : scope_keys) {
-			if (GetAsyncKeyState(keys.second)) {
-				items::current_scope = items::scopes[keys.first];
+			for (auto keys : gun_keys) {
+				if (GetAsyncKeyState(keys.second)) {
+					items::current_gun = items::guns[keys.first];
+				}
 			}
+
+			for (auto keys : scope_keys) {
+				if (GetAsyncKeyState(keys.second)) {
+					items::current_scope = items::scopes[keys.first];
+				}
+			}
+
+			SleepEx(1, false);
+
 		}
 	}
 }
