@@ -13,7 +13,12 @@ namespace#0722
 TO-DO LIST
 
 - add more guns (probably not (if u guys wanna do it and send it to me ill add it tho))
-- add some sort of gui, will probably just paste imgui demo
 - pay off mortgage
 
 and creds to randy shanks for utils
+
+8/11/2022
+---------
+
+-added the usage of threads
+-added gui!
