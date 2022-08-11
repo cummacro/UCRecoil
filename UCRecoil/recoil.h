@@ -10,7 +10,7 @@ namespace recoil {
 		auto excess_time = std::chrono::high_resolution_clock::now();
 
 		while (1) {
-			while (!(GetAsyncKeyState(VK_LBUTTON) && GetAsyncKeyState(VK_RBUTTON))) {
+			while (!(GetAsyncKeyState(VK_LBUTTON) && GetAsyncKeyState(VK_RBUTTON)) || !globals::active) {
 				SleepEx(1, false);
 				excess_time = std::chrono::high_resolution_clock::now();
 			}

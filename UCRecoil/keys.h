@@ -19,13 +19,15 @@ namespace keys {
 
 			for (auto keys : gun_keys) {
 				if (GetAsyncKeyState(keys.second)) {
-					items::current_gun = items::guns[keys.first];
+					globals::weaponid = keys.first;
+					//items::current_gun = items::guns[keys.first];
 				}
 			}
 
 			for (auto keys : scope_keys) {
 				if (GetAsyncKeyState(keys.second)) {
-					items::current_scope = items::scopes[keys.first];
+					globals::scopeid = keys.first;
+					//items::current_scope = items::scopes[keys.first];
 				}
 			}
 
