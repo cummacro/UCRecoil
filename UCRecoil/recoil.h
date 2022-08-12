@@ -19,7 +19,12 @@ namespace recoil {
 				if (!GetAsyncKeyState(VK_LBUTTON))
 					break;
 
-				vec2 angles = items::current_gun->pattern[current_shot];
+				vec2 angles = items::current_gun->pattern[current_shot] / 2.f;
+
+				if (GetAsyncKeyState(VK_LCONTROL))
+					angles = angles / 2.f;
+
+				angles = angles * items::current_scope->multiplier;
 
 				vec2 pos = util::get_pixels(angles);
 				float animation_time = util::get_animation(angles);

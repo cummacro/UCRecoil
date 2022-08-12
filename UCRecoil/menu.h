@@ -13,7 +13,7 @@ LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 HWND hwnd;
 
-static const char* weapons[] = { "assault rifle", "lr-300 rifle" };
+static const char* weapons[] = { "assault rifle", "lr-300 rifle", "mp5a4", "thompson" };
 static const char* scopes[] = { "iron sights", "simple sights" };
 
 namespace menu {

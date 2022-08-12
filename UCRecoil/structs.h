@@ -10,6 +10,10 @@ struct vec2 {
 	inline vec2 operator/(float a) {
 		return vec2(this->x / a, this->y / a);
 	}
+
+	inline vec2 operator*(float a) {
+		return vec2(this->x * a, this->y * a);
+	}
 };
 
 struct gun {
